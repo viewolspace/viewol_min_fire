@@ -1,18 +1,9 @@
 <view class="schedule-container">
-  <image
-    src="../../images/nav.png"
-    mode="widthFix"
-    class="w-100 "
-  ></image>
+  <image src="https://www.view-ol.com/banner/images/nav.png" mode="widthFix" class="w-100 "></image>
   <view class="weui-tab" wx:if="{{is_self===0}}">
     <view class="weui-navbar">
       <block wx:for="{{tabs}}" wx:key="*this">
-        <view
-          id="{{index}}"
-          class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}"
-          data-date="{{item.date}}"
-          bindtap="tabClick"
-        >
+        <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" data-date="{{item.date}}" bindtap="tabClick">
           <view class="weui-navbar__title">
             <view class="week">{{item.week}}</view>
             <view class="date">{{item.date}}</view>
@@ -23,7 +14,6 @@
     </view>
   </view>
   <view class="content {{is_self===0?'':'self'}}">
-
     <view class="section-title weui-flex">
       <view class="name">时间安排</view>
       <view class="sub-title">TIME ARRANGEMENT</view>
@@ -37,13 +27,7 @@
         <text class="year">/{{year}}年</text>
       </view>
       <view class="list">
-        <view
-          class="item"
-          wx:for="{{schedule_list}}"
-          wx:for-index="key"
-          wx:for-item="value"
-          wx:key="key"
-        >
+        <view class="item" wx:for="{{schedule_list}}" wx:for-index="key" wx:for-item="value" wx:key="key">
           <view class="weui-flex time-container">
             <view class="left">
               <image src="../../images/common/icon_clock.png" mode="widthFix" />
@@ -52,20 +36,10 @@
               <view class="time">{{key}}</view>
             </view>
           </view>
-          <navigator
-            url="/pages/activity/detail?id={{item.id}}"
-            class="weui-flex activity"
-            hover-class="none"
-            wx:for="{{value}}"
-            wx:key="id"
-          >
+          <navigator url="/pages/activity/detail?id={{item.id}}" class="weui-flex activity" hover-class="none" wx:for="{{value}}" wx:key="id">
             <view class="left weui-flex">
               <view class="point">
-                <image
-                  class=""
-                  src="../../images/common/icon_arrow_right.png"
-                  mode="widthFix"
-                />
+                <image class="" src="../../images/common/icon_arrow_right.png" mode="widthFix" />
               </view>
             </view>
             <view class="weui-flex__item weui-flex right">
@@ -87,8 +61,5 @@
         </view>
       </view>
     </view>
-
   </view>
-
 </view>
-

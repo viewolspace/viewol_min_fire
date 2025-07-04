@@ -9,29 +9,33 @@ const sliderWidth = 28
 
 Page({
   data: {
-    year: '2023',
+    year: '2025',
     month: '10',
     tabs: [
       {
-        week: '二',
+        week: '六',
+        date: 11
+      },
+      {
+        week: '日',
         date: 12
       },
       {
-        week: '三',
+        week: '一',
         date: 13
       },
       {
-        week: '四',
+        week: '二',
         date: 14
       },
       {
-        week: '五',
+        week: '三',
         date: 15
       },
       {
-        week: '六',
+        week: '四',
         date: 16
-      }
+      },
     ],
     activeIndex: 0,
     sliderOffset: 0,

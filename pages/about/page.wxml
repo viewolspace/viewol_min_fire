@@ -1,7 +1,7 @@
 <view class="page">
   <view class="nav">
     <image
-      src="../../images/nav.png"
+      src="https://www.view-ol.com/banner/images/nav.png"
       mode="widthFix"
       class="w-100"
     ></image>

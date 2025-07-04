@@ -3,7 +3,7 @@ const {
 } = getApp()
 Page({
   data: {
-    imgUrls: ['/images/index/news.png'],
+    imgUrls: ['https://www.view-ol.com/banner/images/index/news.png'],
     lastSeq: '',
     info_list: [],
     loadding: false

@@ -1,57 +1,26 @@
 <view class="page exhibitors-container">
-  <image
-    src="../../images/nav_honesty.png"
-    mode="widthFix"
-    class="w-100 nav"
-  ></image>
-
-  <view
-    class="collapse-contaienr"
-    wx:for="{{companyList}}"
-    wx:key="index"
-  >
+  <image src="https://www.view-ol.com/banner/images/nav_honesty.png" mode="widthFix" class="w-100 nav"></image>
+  <view class="collapse-contaienr" wx:for="{{companyList}}" wx:key="index">
     <view class="collapse-title">
-      <view
-        class="label"
-        bindtap="toggleCollapse"
-        data-index="{{index}}"
-      >
+      <view class="label" bindtap="toggleCollapse" data-index="{{index}}">
         <div class="title">
-          <view class="year">
-            {{item.year}}
-          </view>
+          <view class="year">{{item.year}}</view>
           {{item.name}}
         </div>
         <image class="arrow {{show[index]?'open':''}}" src="../../images/common/icon_arrow_down.png" />
       </view>
-
     </view>
     <view class="collapse-content" wx:if="{{show[index]}}">
-      <view
-        wx:for="{{item.list}}"
-        wx:for-item="company"
-        class="collapse-item"
-        wx:key="name"
-      >
+      <view wx:for="{{item.list}}" wx:for-item="company" class="collapse-item" wx:key="name">
         <view class="content">
           <view class="star-container">
             <view class="star">
-              <image
-                wx:for="{{company.star}}"
-                wx:key="idx"
-                wx:for-item="star"
-                wx:for-index="idx"
-                src="../../images/common/icon_star.png"
-                mode="widthFix"
-              />
+              <image wx:for="{{company.star}}" wx:key="idx" wx:for-item="star" wx:for-index="idx" src="../../images/common/icon_star.png" mode="widthFix" />
             </view>
           </view>
-          <view class="name">
-            {{company.name}}
-          </view>
+          <view class="name">{{company.name}}</view>
         </view>
       </view>
     </view>
   </view>
 </view>
-

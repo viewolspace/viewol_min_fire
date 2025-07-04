@@ -2,7 +2,7 @@
   <view>
     <image
       class="title"
-      src="../../images/index/title.png"
+      src="https://www.view-ol.com/banner/images/index/title.png"
       mode="widthFix"
     ></image>
   </view>

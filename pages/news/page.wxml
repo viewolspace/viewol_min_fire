@@ -1,7 +1,7 @@
 <view class="page">
   <view class="page_hd">
     <image
-      src="../../images/index/news.png"
+      src="https://www.view-ol.com/banner/images/index/news.png"
       mode="widthFix"
       class="w-100 "
     ></image>

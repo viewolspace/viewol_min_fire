@@ -2,14 +2,14 @@
   <view class="welcome-container">
     <image
       class="w-100"
-      src="../../images/invitation/nav.png"
+      src="https://www.view-ol.com/banner/images/invitation/nav.png"
       mode="widthFix"
     />
   </view>
   <view class="person-container">
     <view class="person">
       <view class="avatar">
-        <image src=" {{headImgUrl}}" mode="widthFix" />
+        <image src=" {{headImgUrl}}" wx-if="{{headImgUrl}}" mode="widthFix" />
         <view class="name">
           {{userName}}
         </view>

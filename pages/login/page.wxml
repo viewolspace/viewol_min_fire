@@ -1,6 +1,6 @@
 <view class="page">
   <view class='page_hd'>
-    <image src='/images/index/title.png' mode="widthFix"></image>
+    <image src='https://www.view-ol.com/banner/images/index/title.png' mode="widthFix"></image>
   </view>
   <view class='page_bd'>
     <view class="tip">登录</view>

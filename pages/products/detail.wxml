@@ -37,7 +37,7 @@
     <view>
       <image
         class=""
-        src="../../images/welcome.png"
+        src="https://www.view-ol.com/banner/images/welcome.png"
         mode="widthFix"
       />
 
