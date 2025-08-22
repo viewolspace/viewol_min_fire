@@ -41,11 +41,11 @@ Page({
   },
 
   getPhoneNumber: function ({ detail }) {
-    const { encryptedData, iv: ivStr } = detail
-    this.loginWithPhone({ encryptedData, ivStr })
+    const { encryptedData, iv: ivStr, code } = detail
+    this.loginWithPhone({ encryptedData, ivStr, phoneCode: code })
   },
 
-  loginWithPhone: async function ({ encryptedData, ivStr }) {
+  loginWithPhone: async function ({ encryptedData, ivStr, phoneCode }) {
     let { nickName, headPic } = this.data
     const { code } = await wx.pro.login()
     const {
@@ -59,6 +59,7 @@ Page({
         headPic,
         encryptedData,
         ivStr,
+        phoneCode,
         maNum: 3,
         invitee: globalData.invitee
       }
