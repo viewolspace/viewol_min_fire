@@ -1,90 +1,53 @@
 <view class="page">
   <view>
-    <image
-      class="title"
-      src="https://www.view-ol.com/banner/images/index/title.png"
-      mode="widthFix"
-    ></image>
+    <image class="title" src="https://www.view-ol.com/banner/images/index/title.png" mode="widthFix"></image>
   </view>
   <view class="page__bd">
     <view class="weui-grids grid">
       <block>
-        <navigator
-          url="../about/page"
-          class="weui-grid"
-          hover-class="none"
-        >
+        <navigator url="../about/page" class="weui-grid" hover-class="none">
           <image class="weui-grid__icon" src="../../images/index/icon_1.png"></image>
           <view class="weui-grid__label">展会概况</view>
         </navigator>
       </block>
       <block>
-        <navigator
-          url="/pages/news/page"
-          class="weui-grid"
-          hover-class="none"
-        >
+        <navigator url="/pages/news/page" class="weui-grid" hover-class="none">
           <image class="weui-grid__icon" src="../../images/index/icon_2.png"></image>
           <view class="weui-grid__label">行业快讯</view>
         </navigator>
       </block>
       <block>
-        <navigator
-          url="/pages/products/page"
-          class="weui-grid"
-          hover-class="none"
-        >
+        <navigator url="/pages/products/page" class="weui-grid" hover-class="none">
           <image class="weui-grid__icon" src="../../images/index/icon_3.png"></image>
           <view class="weui-grid__label">产品查询</view>
         </navigator>
       </block>
       <block>
-        <navigator
-          url="/pages/exhibitors/page"
-          open-type="switchTab"
-          class="weui-grid"
-          hover-class="none"
-        >
+        <navigator url="/pages/exhibitors/page" open-type="switchTab" class="weui-grid" hover-class="none">
           <image class="weui-grid__icon" src="../../images/index/icon_4.png"></image>
           <view class="weui-grid__label">展商秀</view>
         </navigator>
       </block>
       <block>
-        <navigator
-          url="/pages/about/server"
-          class="weui-grid"
-          hover-class="none"
-        >
+        <navigator url="/pages/about/server" class="weui-grid" hover-class="none">
           <image class="weui-grid__icon" src="../../images/index/icon_5.png"></image>
           <view class="weui-grid__label">展会服务</view>
         </navigator>
       </block>
       <block>
-        <navigator
-          url="/pages/activity/all"
-          class="weui-grid"
-          hover-class="none"
-        >
+        <navigator url="/pages/activity/all" class="weui-grid" hover-class="none">
           <image class="weui-grid__icon" src="../../images/index/icon_6.png"></image>
           <view class="weui-grid__label">论坛活动</view>
         </navigator>
       </block>
       <block>
-        <navigator
-          url="/pages/exhibitors/honesty"
-          class="weui-grid"
-          hover-class="none"
-        >
+        <navigator url="/pages/exhibitors/honesty" class="weui-grid" hover-class="none">
           <image class="weui-grid__icon" src="../../images/index/icon_7.png"></image>
           <view class="weui-grid__label">诚信企业</view>
         </navigator>
       </block>
       <block>
-        <navigator
-          url="/pages/web/page?url={{web_url}}&title=线上展会"
-          class="weui-grid"
-          hover-class="none"
-        >
+        <navigator url="/pages/web/page?url={{web_url}}&title=线上展会" class="weui-grid" hover-class="none">
           <!-- <view  class="weui-grid" hover-class="none"> -->
           <image class="weui-grid__icon" src="../../images/index/icon_8.png"></image>
           <view class="weui-grid__label">线上展会</view>
@@ -92,11 +55,7 @@
         </navigator>
       </block>
       <block>
-        <navigator
-          url="/pages/products/page?award=1"
-          class="weui-grid"
-          hover-class="none"
-        >
+        <navigator url="/pages/products/page?award=1" class="weui-grid" hover-class="none">
           <image class="weui-grid__icon" src="../../images/index/icon_9.png"></image>
           <view class="weui-grid__label">创新产品</view>
         </navigator>
@@ -105,24 +64,13 @@
   </view>
   <view class="active">
     <!-- <navigator url="../web/page?url={{video.link}}&title={{video.title}}"> -->
-    <video
-      src="{{video.source}}"
-      style="width:100%"
-      autoplay="{{false}}"
-      show-mute-btn="{{true}}"
-      object-fit="fill"
-    ></video>
+    <video src="{{video.source}}" style="width:100%" autoplay="{{false}}" show-mute-btn="{{true}}" object-fit="fill"></video>
     <!-- </navigator> -->
   </view>
   <view class="time-line">
     <view class="content">
       <view class="">
-        <navigator
-          url="/pages/activity/page"
-          open-type="switchTab"
-          class="normal-title"
-          hover-class="none"
-        >
+        <navigator url="/pages/activity/page" open-type="switchTab" class="normal-title" hover-class="none">
           <image class="icon" src="../../images/index/icon_richeng.png"></image>
           <view class="title">活动日程</view>
           <view class="more">查看更多</view>
@@ -130,18 +78,10 @@
         </navigator>
       </view>
       <view class="events">
-
-        <navigator
-          url="/pages/activity/detail?id={{item.id}}"
-          class="weui-flex item"
-          hover-class="none"
-          wx:for="{{recommend_schedule_list}}"
-          wx:key="id"
-        >
+        <navigator url="/pages/activity/detail?id={{item.id}}" class="weui-flex item" hover-class="none" wx:for="{{recommend_schedule_list}}" wx:key="id">
           <view class="weui-flex__item info">
             <view class="weui-flex">
               <view class="weui-flex__item">
-
                 <view class="topic">
                   <text>主题 {{item.title}}</text>
                 </view>
@@ -158,19 +98,13 @@
             </view>
           </view>
         </navigator>
-
       </view>
     </view>
   </view>
   <view class="exhibitors hot">
     <view class="content">
       <view class="">
-        <navigator
-          url="/pages/exhibitors/page"
-          open-type="switchTab"
-          class="normal-title"
-          hover-class="none"
-        >
+        <navigator url="/pages/exhibitors/page" open-type="switchTab" class="normal-title" hover-class="none">
           <image class="icon" src="../../images/index/icon_renqizhanshang.png"></image>
           <view class="title">人气展商</view>
           <view class="more">查看更多</view>
@@ -178,32 +112,12 @@
         </navigator>
       </view>
       <view class="list">
-        <swiper
-          indicator-dots="{{false}}"
-          autoplay="{{true}}"
-          interval="5000"
-          duration="1000"
-          circular="{{true}}"
-        >
+        <swiper indicator-dots="{{false}}" autoplay="{{true}}" interval="5000" duration="1000" circular="{{true}}">
           <block wx:for="{{recomment_company_list}}" wx:key="index">
             <swiper-item>
-              <view
-                class="weui-flex"
-                wx:for="{{item}}"
-                wx:for-item="companies"
-                wx:key="id"
-              >
-                <navigator
-                  url="../web/page?url={{item.link}}&title={{item.name}}&sence={{item.sence}}"
-                  class="weui-flex__item item"
-                  wx:for="{{companies}}"
-                  wx:key="id"
-                >
-                  <image
-                    class=""
-                    src="{{item.logoView}}"
-                    mode="widthFix"
-                  ></image>
+              <view class="weui-flex" wx:for="{{item}}" wx:for-item="companies" wx:key="id">
+                <navigator url="../web/page?url={{item.link}}&title={{item.name}}&sence={{item.sence}}" class="weui-flex__item item" wx:for="{{companies}}" wx:key="id">
+                  <image class="" src="{{item.logoView}}" mode="widthFix"></image>
                 </navigator>
               </view>
             </swiper-item>
@@ -215,11 +129,7 @@
   <view class="product hot">
     <view class="content">
       <view class="">
-        <navigator
-          url="/pages/products/page"
-          class="normal-title"
-          hover-class="none"
-        >
+        <navigator url="/pages/products/page" class="normal-title" hover-class="none">
           <image class="icon" src="../../images/index/icon_renqichanping.png"></image>
           <view class="title">人气产品</view>
           <view class=" more">查看更多</view>
@@ -227,32 +137,12 @@
         </navigator>
       </view>
       <view class="list">
-        <swiper
-          indicator-dots="{{false}}"
-          autoplay="{{true}}"
-          interval="5000"
-          duration="1000"
-          circular="{{true}}"
-        >
+        <swiper indicator-dots="{{false}}" autoplay="{{true}}" interval="5000" duration="1000" circular="{{true}}">
           <block wx:for="{{recomment_product_list}}" wx:key="index">
             <swiper-item>
-              <view
-                class="weui-flex"
-                wx:for="{{item}}"
-                wx:for-item="products"
-                wx:key="id"
-              >
-                <navigator
-                  url="/pages/products/detail?id={{item.id}}"
-                  class="weui-flex__item item"
-                  wx:for="{{products}}"
-                  wx:key="id"
-                >
-                  <image
-                    class=""
-                    src="{{item.imageView}}"
-                    mode="aspectFill"
-                  ></image>
+              <view class="weui-flex" wx:for="{{item}}" wx:for-item="products" wx:key="id">
+                <navigator url="/pages/products/detail?id={{item.id}}" class="weui-flex__item item" wx:for="{{products}}" wx:key="id">
+                  <image class="" src="{{item.imageView}}" mode="aspectFill"></image>
                 </navigator>
               </view>
             </swiper-item>
@@ -271,122 +161,63 @@
       </view>
       <view class="list">
         <view class="row-item">
-          <view
-            class="place"
-            data-url="https://www.view-ol.com/pmt/W1.jpg"
-            bindtap="showImage"
-          >
+          <view class="place" data-url="https://www.view-ol.com/pmt/W1.jpg" bindtap="showImage">
             W1
           </view>
-          <view
-            class="place"
-            data-url="https://www.view-ol.com/pmt/W2.jpg"
-            bindtap="showImage"
-          >
+          <view class="place" data-url="https://www.view-ol.com/pmt/W2.jpg" bindtap="showImage">
             W2
           </view>
-          <view
-            class="place"
-            data-url="https://www.view-ol.com/pmt/E1.jpg"
-            bindtap="showImage"
-          >
+          <view class="place" data-url="https://www.view-ol.com/pmt/E1.jpg" bindtap="showImage">
             E1
           </view>
-          <view
-            class="place"
-            data-url="https://www.view-ol.com/pmt/E2.jpg"
-            bindtap="showImage"
-          >
+          <view class="place" data-url="https://www.view-ol.com/pmt/E2.jpg" bindtap="showImage">
             E2
           </view>
-          <view
-            class="place"
-            data-url="https://www.view-ol.com/pmt/E3.jpg"
-            bindtap="showImage"
-          >
+          <view class="place" data-url="https://www.view-ol.com/pmt/E3.jpg" bindtap="showImage">
             E3
           </view>
-          <view
-            class="place"
-            data-url="https://www.view-ol.com/pmt/E4.jpg"
-            bindtap="showImage"
-          >
+          <view class="place" data-url="https://www.view-ol.com/pmt/E4.jpg" bindtap="showImage">
             E4
           </view>
-
         </view>
         <view class="row-item">
-          <view
-            class="place"
-            data-url="https://www.view-ol.com/pmt/W3.jpg"
-            bindtap="showImage"
-          >
+          <view class="place" data-url="https://www.view-ol.com/pmt/W3.jpg" bindtap="showImage">
             W3
           </view>
-          <view
-            class="place"
-            data-url="https://www.view-ol.com/pmt/W4.jpg"
-            bindtap="showImage"
-          >
+          <view class="place" data-url="https://www.view-ol.com/pmt/W4.jpg" bindtap="showImage">
             W4
           </view>
-          <view
-            class="place out"
-            data-url="https://www.view-ol.com/pmt/E1w.jpg"
-            bindtap="showImage"
-          >
+          <view class="place out" data-url="https://www.view-ol.com/pmt/E1w.jpg" bindtap="showImage">
             E1
           </view>
-          <view
-            class="place out"
-            data-url="https://www.view-ol.com/pmt/E2w.jpg"
-            bindtap="showImage"
-          >
+          <view class="place out" data-url="https://www.view-ol.com/pmt/E2w.jpg" bindtap="showImage">
             E2
           </view>
-          <view
-            class="place out"
-            data-url="https://www.view-ol.com/pmt/E3w.jpg"
-            bindtap="showImage"
-          >
+          <view class="place out" data-url="https://www.view-ol.com/pmt/E3w.jpg" bindtap="showImage">
             E3
           </view>
-          <view
-            class="place out"
-            data-url="https://www.view-ol.com/pmt/E4w.jpg"
-            bindtap="showImage"
-          >
+          <view class="place out" data-url="https://www.view-ol.com/pmt/E4w.jpg" bindtap="showImage">
             E4
           </view>
         </view>
         <view class="row-item">
-          <view
-            class="guide"
-            data-url="https://www.view-ol.com/pmt/qg.png"
-            bindtap="showImage"
-          >
-            全馆
-            <text>平面图</text>
+          <view class="guide" data-url="https://www.view-ol.com/pmt/qg.png" bindtap="showImage">
+            <view>全馆</view>
+            <view class="tip">平面图</view>
           </view>
-          <view
-            class="guide"
-            data-url="https://www.view-ol.com/pmt/zb.png"
-            bindtap="showImage"
-          >
-            周边
-            <text>引导图</text>
+          <view class="guide" data-url="https://www.view-ol.com/pmt/zb.png" bindtap="showImage">
+            <view>周边</view>
+            <view class="tip">引导图</view>
           </view>
-          <view
-            class="guide"
-            data-url="https://www.view-ol.com/pmt/jt.png"
-            bindtap="showImage"
-          >
-            交通
-            <text>引导图</text>
+          <view class="guide" data-url="https://www.view-ol.com/pmt/jt.png" bindtap="showImage">
+            <view>交通</view>
+            <view class="tip">引导图</view>
+          </view>
+          <view class="guide" data-url="https://www.view-ol.com/pmt/ngc.png" bindtap="showImage">
+            <view>南广场</view>
           </view>
         </view>
       </view>
     </view>
   </view>
 </view>
-

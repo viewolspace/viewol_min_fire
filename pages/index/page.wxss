@@ -217,14 +217,14 @@
 
 .places .row-item {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   margin-bottom: 17rpx;
+  gap: 16rpx;
 }
 
 .guide {
   width: 204rpx;
-  height: 48rpx;
   background: #a0c9fd;
   border: 2rpx solid #85bbfe;
   border-radius: 15rpx;
@@ -233,12 +233,13 @@
   font-weight: 800;
   color: #f9fafc;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.guide text {
-  font-size: 35rpx;
+.guide .tip {
+  font-size: 26rpx;
   font-weight: 300;
   color: #ffe200;
 }
